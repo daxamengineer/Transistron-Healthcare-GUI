@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right top, #1f2f98, #005bba, #0080cb, #00a2d0, #00c3d1, #31ccd5, #49d4d8, #5cdddc, #34d1e3, #00c4e9, #00b6ec, #1ca7ec);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#shadow{
+  text-shadow: 1px 1px 2px pink;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f94bff;
+  color: white;
+}
+
+.logoutLblPos{
+
+  position:fixed;
+  right:100px;
+  top : 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <!-- <a href="#logout">Log Out</a> -->
+</div>
+
+<div>
+  
+  <b><center><h1 font-size="500px" color="#a932ad">Patients Data</h1></center></b>
+
+  <center>
+    <table border="4" bordercolor="#354B45" width ="60%" height="20%" cellpadding="10" cellspacing="10">
+      <center>
+      <tr>
+        <td align="center" colspan="3"><iframe width="450" height="260" style="border: 8px solid #245c5341" src="https://thingspeak.com/channels/1886709/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=50&type=line&update=15"></iframe></td></td>
+        <td align="center" colspan="3" rowspan="3"><iframe width="450" height="260" style="border: 8px solid #245c5341" src="https://thingspeak.com/channels/1886709/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=50&type=line&update=15"></iframe></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center"><iframe width="450" height="260" style="border: 8px solid #245c5341" src="https://thingspeak.com/channels/1886709/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=50&type=line"></iframe></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center"><iframe width="450" height="260" style="border: 8px solid #245c5341" src="https://thingspeak.com/channels/1886709/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=50&type=line"></iframe></td>
+      </tr>
+      </center>
+    </table>
+  </center>
+    <p>
+        <p>
+
+        </p>
+    </p>
+</div>
+
+</body>
+</html>
